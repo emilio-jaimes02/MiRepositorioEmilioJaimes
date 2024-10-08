@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas Cowboys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #00338D;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ffffff 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #ffffff;
+        }
+        footer {
+            background: #00338D;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dallas Cowboys</h1>
+            <nav>
+                <ul>
+                    <li><a href="#history">Historia</a></li>
+                    <li><a href="#players">Jugadores</a></li>
+                    <li><a href="#schedule">Calendario</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="history" class="main-content">
+            <h2>Historia</h2>
+            <p>Los Dallas Cowboys son un equipo profesional de fútbol americano con sede en Dallas, Texas. Fundado en 1960, el equipo ha ganado cinco Super Bowls y es conocido por su gran base de fanáticos.</p>
+        </section>
+        <section id="players" class="main-content">
+            <h2>Jugadores Destacados</h2>
+            <ul>
+                <li>Roger Staubach</li>
+                <li>Troy Aikman</li>
+                <li>Emmitt Smith</li>
+                <li>Michael Irvin</li>
+                <li>Dak Prescott</li>
+            </ul>
+        </section>
+        <section id="schedule" class="main-content">
+            <h2>Calendario 2024</h2>
+            <p>Consulta el <a href="https://www.dallascowboys.com/schedule">calendario completo</a> de los partidos de los Dallas Cowboys para la temporada 2024.</p>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Dallas Cowboys Fan Page</p>
+    </footer>
+</body>
+</html>
