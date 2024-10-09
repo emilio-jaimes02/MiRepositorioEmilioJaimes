@@ -22,24 +22,54 @@
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #ffffff 3px solid;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 60px;
+        }
+        header nav {
+            flex-grow: 1;
+            text-align: right;
         }
         header a {
             color: #ffffff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
+            margin-left: 20px;
         }
         .main-content {
             padding: 20px;
             background: #ffffff;
+            margin-top: 20px;
+        }
+        .player-card {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            padding: 10px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .player-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            padding: 10px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
         }
         footer {
             background: #00338D;
@@ -53,39 +83,61 @@
 <body>
     <header>
         <div class="container">
-            <h1>Dallas Cowboys</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/1200px-Dallas_Cowboys.svg.png" alt="Dallas Cowboys Logo">
             <nav>
-                <ul>
-                    <li><a href="#history">Historia</a></li>
-                    <li><a href="#players">Jugadores</a></li>
-                    <li><a href="#owner">Dueño</a></li>
-                    <li><a href="#products">Productos</a></li>
-                </ul>
+                <a href="#history">Historia</a>
+                <a href="#players">Jugadores</a>
+                <a href="#owner">Dueño</a>
+                <a href="#products">Productos</a>
             </nav>
         </div>
     </header>
     <div class="container">
         <section id="history" class="main-content">
             <h2>Historia</h2>
-            <p>Los Dallas Cowboys son un equipo profesional de fútbol americano con sede en Dallas, Texas. Fundado en 1960, el equipo ha ganado cinco Super Bowls y es conocido por su gran base de fanáticos. Bajo la dirección de Jerry Jones, quien compró el equipo en 1989, los Cowboys han mantenido una tradición ganadora[^1^][3][^2^][4].</p>
+            <p>Los Dallas Cowboys son un equipo profesional de fútbol americano con sede en Dallas, Texas. Fundado en 1960, el equipo ha ganado cinco Super Bowls y es conocido por su gran base de fanáticos. Bajo la dirección de Jerry Jones, quien compró el equipo en 1989, los Cowboys han mantenido una tradición ganadora.</p>
         </section>
         <section id="players" class="main-content">
             <h2>Jugadores Destacados</h2>
-            <ul>
-                <li>Roger Staubach</li>
-                <li>Troy Aikman</li>
-                <li>Emmitt Smith</li>
-                <li>Michael Irvin</li>
-                <li>Dak Prescott</li>
-            </ul>
+            <div class="player-card">
+                <img src="https://example.com/roger_staubach.jpg" alt="Roger Staubach">
+                <p>Roger Staubach</p>
+            </div>
+            <div class="player-card">
+                <img src="https://example.com/troy_aikman.jpg" alt="Troy Aikman">
+                <p>Troy Aikman</p>
+            </div>
+            <div class="player-card">
+                <img src="https://example.com/emmitt_smith.jpg" alt="Emmitt Smith">
+                <p>Emmitt Smith</p>
+            </div>
+            <div class="player-card">
+                <img src="https://example.com/michael_irvin.jpg" alt="Michael Irvin">
+                <p>Michael Irvin</p>
+            </div>
+            <div class="player-card">
+                <img src="https://example.com/dak_prescott.jpg" alt="Dak Prescott">
+                <p>Dak Prescott</p>
+            </div>
         </section>
         <section id="owner" class="main-content">
             <h2>Dueño del Equipo</h2>
-            <p>El actual dueño, presidente y gerente general de los Dallas Cowboys es Jerry Jones. Desde que adquirió el equipo en 1989, ha llevado a los Cowboys a ganar tres Super Bowls en sus primeros siete años de propiedad[^1^][3].</p>
+            <p>El actual dueño, presidente y gerente general de los Dallas Cowboys es Jerry Jones. Desde que adquirió el equipo en 1989, ha llevado a los Cowboys a ganar tres Super Bowls en sus primeros siete años de propiedad.</p>
         </section>
         <section id="products" class="main-content">
             <h2>Productos del Equipo</h2>
-            <p>Los Dallas Cowboys ofrecen una amplia gama de productos oficiales, incluyendo camisetas, gorras, accesorios y más. Puedes encontrar estos productos en la <a href="https://shop.dallascowboys.com">tienda oficial</a> del equipo.</p>
+            <div class="product-card">
+                <img src="https://example.com/jersey.jpg" alt="Jersey">
+                <p>Jersey - $99.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/hat.jpg" alt="Gorra">
+                <p>Gorra - $29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/football.jpg" alt="Balón de Americano">
+                <p>Balón de Americano - $49.99</p>
+            </div>
         </section>
     </div>
     <footer>
